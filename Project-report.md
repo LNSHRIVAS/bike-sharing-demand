@@ -23,11 +23,12 @@ After conducting hyperparameter tuning, the model performance showed further imp
 If given more time with this dataset, I would allocate additional time for further feature engineering. Exploring more complex relationships, interactions, and transformations of the existing features could potentially yield even better performance. Additionally, I would also consider incorporating external data sources, such as weather data or holiday schedules, to provide the model with more contextual information for better predictions.
 
 ### Create a table with the models you ran, the hyperparameters modified, and the kaggle score.
-|model|hpo1|hpo2|hpo3|score|
-|--|--|--|--|--|
-|initial|0.001	adamw	-	1.32878
-|add_features|0.001	adamw	-	0.49783
-|hpo|0.001	adamw	100	0.53768
+| Model            | hpo1 (learning_rate) | hpo2 (optim_type) | hpo3 (num_trials) | Score      |
+| ---------------- | -------------------- | ----------------- | ----------------- | ---------- |
+| Initial          | 0.001                | adamw             | -                 | 1.32878    |
+| Add Features     | 0.001                | adamw             | -                 | 0.49783    |
+| HPO (AutoGluon)  | 0.001                | adamw             | 20                | 0.46771    |
+
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 
