@@ -13,11 +13,22 @@ The top-ranked model that performed in the project was predictions_new_features2
 During the exploratory analysis, I found that certain features had a strong correlation with the bike sharing demand, such as temperature, humidity, and hour of the day. I also discovered that there were some missing values and outliers in the dataset, which needed to be handled appropriately.
 
 ### How much better did your model preform after adding additional features and why do you think that is?
-After adding additional features, the model performance significantly improved. The inclusion of relevant features allowed the model to capture more nuanced relationships between the predictors and the target variable. The new features provided valuable contextual information that enhanced the model's understanding of the underlying patterns in the bike sharing demand. As a result, the model's predictive accuracy and ability to generalize to unseen data were substantially enhanced.
+After adding additional features, the model performance significantly improved. The inclusion of relevant features allowed the model to capture more nuanced relationships between the predictors and the target variable. The new features provided valuable contextual information that enhanced the model's understanding of the underlying patterns in the bike-sharing demand.
+
+The improvement in performance is reflected in the scores:
+
+Initial Model Score: 1.32878
+Model with Additional Features Score: 0.49783
 
 ## Hyper parameter tuning
 ### How much better did your model preform after trying different hyper parameters?
-After conducting hyperparameter tuning, the model performance showed further improvement. By systematically exploring different hyperparameters, such as learning rate and optimization type, I was able to identify the optimal combination that maximized the model's performance. The tuned hyperparameters allowed the model to converge more effectively during training and resulted in better generalization to the test data.
+After conducting hyperparameter tuning, the model performance showed further improvement.
+
+The improvement in performance is reflected in the scores:
+
+Model with Additional Features Score: 0.49783
+Model after Hyperparameter Tuning Score: 0.46771
+The tuned hyperparameters allowed the model to converge more effectively during training and resulted in better generalization to the test data, leading to a notable reduction in the evaluation metric. This demonstrates the effectiveness of the selected hyperparameters in enhancing the model's performance beyond the initial model with additional features
 
 ### If you were given more time with this dataset, where do you think you would spend more time?
 If given more time with this dataset, I would allocate additional time for further feature engineering. Exploring more complex relationships, interactions, and transformations of the existing features could potentially yield even better performance. Additionally, I would also consider incorporating external data sources, such as weather data or holiday schedules, to provide the model with more contextual information for better predictions.
